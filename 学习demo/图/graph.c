@@ -49,6 +49,20 @@ void DFS(AMGraph* G,int a)//深度优先搜索
 			DFS(G, i);
 	}
 }
+void BFS(AMGraph *G);
+{
+	int i,j;
+	for(i=0;i<G->arcnum;i++)
+	{
+		for(j=0;j<G->arcnum;j++)
+		{
+			if ((G.arcs[i][j] != MAX) && visited[j] == 0)
+            {
+                visited[j] = 1;
+            }
+		}
+	}
+ } 
 int main()
 {
 	AMGraph G;
